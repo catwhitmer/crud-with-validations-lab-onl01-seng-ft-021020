@@ -1,11 +1,13 @@
-
-<tr>
+<table>
+  <thead>
+    <tr>
       <th>Title</th>
       <th>Genre</th>
       <th>Artist</th>
       <th>Released Year</th>
     </tr>
-
+  </thead>
+  <tbody>
     <% @songs.each do |song| %>
     <tr>
       <td><%= song.title %></td>
@@ -14,4 +16,5 @@
       <td><%= song.release_year %></td>
     </tr>
     <% end %>
- 
+  </tbody>
+</table> 
